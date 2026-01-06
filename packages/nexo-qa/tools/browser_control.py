@@ -34,22 +34,22 @@ class BrowserTools:
             }
         }
 
-    def navigate(self, url: str) -> str:
+    async def navigate(self, url: str) -> str:
         try:
-            from playwright.sync_api import sync_playwright
-            with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
-                page = browser.new_page()
-                page.goto(url)
-                title = page.title()
-                browser.close()
+            from playwright.async_api import async_playwright
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                page = await browser.new_page()
+                await page.goto(url)
+                title = await page.title()
+                await browser.close()
                 return f"Successfully navigated to {url}. Page title: {title}"
         except ImportError:
             return "Error: Playwright not installed. Please run `pip install playwright && playwright install`."
         except Exception as e:
             return f"Error navigating: {e}"
 
-    def screenshot(self, path: str) -> str:
+    async def screenshot(self, path: str) -> str:
         # Note: In a real stateful agent, we would keep the browser open between calls.
         # For this MVP stateless implementation, we can't easily screenshot a page we just navigated away from.
         # This acts as a placeholder or needs a stateful daemon.

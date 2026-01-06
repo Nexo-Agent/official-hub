@@ -16,14 +16,14 @@ visual = VisualTools()
 
 # Register Browser Tools
 @mcp.tool()
-def browser_navigate(url: str) -> str:
+async def browser_navigate(url: str) -> str:
     """Navigate to a URL"""
-    return browser.navigate(url)
+    return await browser.navigate(url)
 
 @mcp.tool()
-def browser_screenshot(path: str) -> str:
+async def browser_screenshot(path: str) -> str:
     """Take a screenshot of the current page"""
-    return browser.screenshot(path)
+    return await browser.screenshot(path)
 
 # Register Visual Tools
 @mcp.tool()
