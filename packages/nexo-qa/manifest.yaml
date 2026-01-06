@@ -1,9 +1,7 @@
-id: "com.nexo.qa"
-name: "QA Auto-Pilot"
-version: "1.0.0"
-author: "Nexo Team"
-description: "An Automation Test Engineer agent capable of running E2E tests using Playwright."
-icon: "icon.png"
-entrypoint: "tools/main.py"
-instructions:
-  default: "instructions/persona.md"
+schema_version: 1
+id: com.nexo.qa
+name: QA Auto-Pilot
+version: 1.0.0
+description: An Automation Test Engineer agent capable of running E2E tests using Playwright.
+author: Nexo Team
+license: MIT

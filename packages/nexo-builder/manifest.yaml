@@ -1,9 +1,7 @@
-id: "com.nexo.builder"
-name: "The Builder"
-version: "1.0.0"
-author: "Nexo Team"
-description: "A Full-Stack Engineer agent capable of reading code, executing terminal commands, and modifying files."
-icon: "icon.png"
-entrypoint: "tools/main.py"
-instructions:
-  default: "instructions/persona.md"
+schema_version: 1
+id: com.nexo.builder
+name: The Builder
+version: 1.0.0
+description: A Full-Stack Engineer agent capable of reading code, executing terminal commands, and modifying files.
+author: Nexo Team
+license: MIT
