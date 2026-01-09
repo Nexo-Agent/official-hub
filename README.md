@@ -35,10 +35,20 @@ MCP Servers support two primary connection types:
 
 ### 4. Utilizing Prompt Templates
 
-1. Download the JSON template from the specified `path`.
-2. Parse the `template` field to identify `{variable}` placeholders.
-3. Use the `variables` array (label, description, default) to generate an interactive UI form.
-4. After user input, inject the values into the template and send the final prompt to the LLM.
+Prompt templates are now stored as Markdown (`.md`) files for better readability and a simplified structure.
+
+1. **Download**: Fetch the Markdown file from the path specified in `index.json`.
+2. **Parsing**:
+   - Extract the metadata from the header (Title and Description).
+   - The actual prompt content is located under the `## Prompt` section.
+3. **Variable Identification**:
+   - Identify placeholders formatted as `{{variable_name}}` within the prompt section.
+4. **UI Generation**:
+   - For each detected `{{variable_name}}`, generate an input field in the Nexo UI.
+   - You can use the variable name to create a user-friendly label (e.g., `tech_stack` -> `Tech Stack`).
+5. **Execution**:
+   - Once the user fills the form, replace all `{{variable_name}}` placeholders with the provided values.
+   - Send the resulting text as the system instruction or user prompt to the LLM.
 
 ## 🏗️ Repository Structure
 
@@ -50,7 +60,7 @@ MCP Servers support two primary connection types:
 │   ├── nexo-qa/          # E2E Testing Agent
 │   ├── nexo-builder/     # Full-stack Development Agent
 │   └── nexo-ops/         # DevOps & Operations Agent
-├── prompts/              # Curated prompt templates in JSON format
+├── prompts/              # Curated prompt templates in Markdown format (.md)
 └── README.md             # This documentation
 ```
 
@@ -59,8 +69,9 @@ MCP Servers support two primary connection types:
 We welcome community contributions via Pull Requests:
 
 1. Add your resource folder to `agents/` or `prompts/`.
-2. Upload the corresponding icon to `assets/icons/`.
-3. Register the new resource in `index.json`.
+2. For prompts, create a `.md` file with a title, description, and a `## Prompt` section using `{{variable}}` syntax.
+3. Upload the corresponding icon to `assets/icons/`.
+4. Register the new resource in `index.json`.
 
 ---
 
