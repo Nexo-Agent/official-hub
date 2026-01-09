@@ -60,11 +60,11 @@
                 "config": {
                     "command": "uv",
                     "args": [
-                        "tool run arxiv-mcp-server --storage-path /Users/nkthanh/nexo/storages"
+                        "tool run arxiv-mcp-server"
                     ],
                     "env": {}
                 },
-                "variables": []
+                "variables": [{"name": "--storage-path", "label": "Storage path", "required": true}]
             },
             {
                 "id": "mcp-sequential-thinking",
