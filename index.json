@@ -109,6 +109,29 @@
                     ],
                     "env": {}
                 }
+            },
+            {
+                "id": "context7",
+                "name": "Context7",
+                "description": "Get the latest documentation and code",
+                "icon": "",
+                "type": "streamable-http",
+                "url": "https://mcp.context7.com/mcp",
+                "headers": {
+                    "CONTEXT7_API_KEY": "<TOKEN>"
+                }
+            },
+            {
+                "id": "github",
+                "name": "Github",
+                "description": "Github MCP",
+                "icon": "",
+                "type": "streamable-http",
+                "url": "https://api.githubcopilot.com/mcp/",
+                "headers": {
+                    "Authorization": "Bearer <TOKEN>",
+                    "Content-Type": "application/json"
+                }
             }
         ],
         "prompts": [
