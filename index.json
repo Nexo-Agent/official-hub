@@ -173,42 +173,42 @@
                 "id": "startup-idea-generator",
                 "name": "Startup Idea Generator",
                 "description": "Generates validated startup ideas based on market trends, pain points, and business models.",
-                "icon": "https://raw.githubusercontent.com/Nexo-Agent/official-hub/main/assets/icons/idea.png",
+                "icon": "",
                 "path": "prompts/business/startup-idea-generator.md"
             },
             {
                 "id": "marketing-copywriter",
                 "name": "Marketing Copywriter",
                 "description": "Writes high-converting marketing copy for landing pages, ads, emails, and social media.",
-                "icon": "https://raw.githubusercontent.com/Nexo-Agent/official-hub/main/assets/icons/marketing.png",
+                "icon": "",
                 "path": "prompts/marketing/marketing-copywriter.md"
             },
             {
                 "id": "technical-architect",
                 "name": "Software Architect",
                 "description": "Provides high-level system design, architecture diagrams, scalability, and technology decisions.",
-                "icon": "https://raw.githubusercontent.com/Nexo-Agent/official-hub/main/assets/icons/architecture.png",
+                "icon": "",
                 "path": "prompts/engineering/software-architect.md"
             },
             {
                 "id": "researcher",
                 "name": "Researcher",
                 "description": "Performs in-depth research on a specific topic, including data analysis, literature review, and methodological insights.",
-                "icon": "https://raw.githubusercontent.com/Nexo-Agent/official-hub/main/assets/icons/data.png",
+                "icon": "",
                 "path": "prompts/engineering/researcher.md"
             },
             {
                 "id": "seo-content-writer",
                 "name": "SEO Content Writer",
                 "description": "Creates SEO-optimized blog posts, keyword strategies, and content outlines that rank on search engines.",
-                "icon": "https://raw.githubusercontent.com/Nexo-Agent/official-hub/main/assets/icons/seo.png",
+                "icon": "",
                 "path": "prompts/content/seo-content-writer.md"
             },
             {
                 "id": "chart-generator",
                 "name": "Mermaid Chart Generator",
                 "description": "Mermaid Chart Generator",
-                "icon": "https://raw.githubusercontent.com/Nexo-Agent/official-hub/main/assets/icons/seo.png",
+                "icon": "",
                 "path": "prompts/engineering/chart-generator.md"
             }
         ]
